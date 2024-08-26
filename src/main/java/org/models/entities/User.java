@@ -3,13 +3,16 @@ package org.models.entities;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 
 @MappedSuperclass
 public abstract class User {
 	
+	@NotBlank
 	@Column(name = "username")
 	private String Username;
 	
+	@NotBlank
 	@Column(name = "password")
 	private String password;
 	

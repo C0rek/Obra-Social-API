@@ -20,6 +20,15 @@ public class Affiliate extends User {
 	
 	public Affiliate() {}
 	
+	public UUID getId() {
+		return id;
+	}
+	public void setId(UUID id) {
+		this.id = id;
+	}
+
+
+
 	public Affiliate(String username, String password) {
 		super(username, password);
 	}
